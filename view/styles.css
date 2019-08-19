@@ -1,0 +1,73 @@
+.body {
+    background: url(../../img/img.jpeg) no-repeat center/cover;
+    height: 100vh;
+}
+.calculate {
+    width: 200px;
+    height: 330px;
+    background: #484c74;
+    padding: 25px 15px;
+    border-radius: 10px;
+    float: left;
+    margin: 70px 200px 50px 500px;
+}
+.calculate__title {
+    font-size: 30px;
+    color: #849f7e;
+    margin-top: -20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+.calculate__row {
+    display: flex;
+    justify-content: space-around;
+}
+.elem__display {
+    position: relative;
+    font: 40px 'digital7_mono', sans-serif;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background: #363636;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: right;
+
+}
+
+.elem__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font: 30px 'Orbitron', sans-serif;
+    width: 50px;
+    height: 50px;
+    text-transform: uppercase;
+    background: #aebcfc;
+    border: 1px solid #eaeaea;
+    color: #666;
+}
+.elem__button:hover {
+    color: #fcfcfc;
+    background: #d45757;
+    border-color: #d45757;
+    cursor: pointer;
+}
+.double-width {
+    width: 183px;
+}
+
+.carriage{
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    animation-duration: 0.5s;
+}
+
+@keyframes blinker {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+}
